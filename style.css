@@ -512,12 +512,23 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 900px) {
     .tribe-cards { grid-template-columns: 1fr; }
-    .strategy-block-row { grid-template-columns: 1fr; }
+    .strategy-block-row { grid-template-columns: 1fr; gap: 3rem; }
     .reverse-row { direction: ltr; }
-    .hero { flex-direction: column; text-align: center; padding-top: 8rem; }
+    .hero { flex-direction: column; text-align: center; padding-top: 10rem; }
     .hero-content { margin-bottom: 4rem; }
     .hero-insight { border-left: none; border-top: 4px solid var(--accent-main); border-radius: 0 0 12px 12px; }
-    .nav-links { display: none; }
+    
+    /* Better Mobile Nav UX */
+    .navbar { flex-direction: column; padding: 1rem; gap: 1rem; }
+    .nav-links { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 1rem;
+        width: 100%;
+    }
+    .nav-links a { margin-left: 0; font-size: 0.85rem; }
+    
     .section-header h2 { font-size: 2.5rem; }
     .hero-title { font-size: 3.5rem; }
     .impact-val { font-size: 2.5rem; }
